@@ -1,0 +1,41 @@
+#include<stdio.h>
+int main()
+{
+float eng,phy,chem,math,pps;
+float total;
+float per;
+
+printf("Enter the marks of 'English'out of 100     >--->> ");
+scanf("%f",&eng);
+printf("Enter the marks of 'Physics'out of 100     >--->> ");
+scanf("%f",&phy);
+printf("Enter the marks of 'Chemistry'out of 100   >--->> ");
+scanf("%f",&chem);
+printf("Enter the marks of 'Mathematics'out of 100 >--->> ");
+scanf("%f",&math);
+printf("Enter the marks of 'Computer'out of 100    >--->> ");
+scanf("%f",&pps);
+total=eng+phy+chem+math+pps;
+
+printf("Total Marks out of 500                     >--->> %.f\n\n  ",total);
+
+per=(total/500)*100;
+printf("Percentage                               >--->> %.2f\n\n",per);
+if(per >=90)
+{
+ printf("Grade A");
+}
+else if(per >=80)
+{
+printf("Grade B");
+}
+else if(per >=70)
+{
+printf("Grade C");
+}
+else if(per <70)
+{
+printf("Grade D");
+}
+
+}
